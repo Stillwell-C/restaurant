@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+/* font-family: 'Akshar', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* font-family: 'Courgette', cursive; */
+
+* {
+    font-family: 'Akshar', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar, container, and footer */
+#container {
+    height: 100vh;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-image: url(../src/img/gabriella-clare-marino-F6AkaAzN4lk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#navbar {
+    flex-grow: 0;
+    overflow: hidden;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#navbar button {
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 1.3rem;
+    margin: 0 15px;
+}
+
+#navbar button:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    color: #FFF;
+}
+
+#page-content-container {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Main page */
+.words {
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-container .name {
+    font-size: 4rem;
+    font-family: 'Courgette', cursive;
+}
+
+.main-container .name-text {
+    font-size: 2rem;
+    font-family: 'Akshar', sans-serif;
+}
+
+
+/* Menu Page */
+
+.menu-content {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-header {
+    margin: 20px;
+}
+
+.menu-selector {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu-selector button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+.menu-selector button:hover {
+    transform: scale(.95);
+    transition: 300ms;
+
+}
+
+.menu-display {
+    max-width: 450px;
+    text-align: center;
+}
+
+/* menu title*/
+
+.menu-title {
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+
+.menu-title-p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.menu-item{
+    margin-bottom: 15px;
+}
+
+.menu-item h2{
+    font-size: 1.5rem;
+}
+
+.menu-item p {
+    font-size: 1rem
+}
+
+.menu-item-top-space {
+    margin-top: 40px;
+}
+
+/* About page */
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FFF;
+    
+}
+
+.about-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-container #map {
+    margin: 20px 0;
+    height: 400px;
+    width: 400px;
+}
+
+.chef-info,
+.restaurant-info {
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+.restaurant-info h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.about-content img {
+    max-width: 400px; 
+    margin-bottom: 5px;
+}
+
+.chef-text {
+    text-align: center;
+}
+
+/* contact page */
+
+.contact-content {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 15px;;
+}
+
+.contact-content form {
+    margin-top: 40px;
+    max-width: 500px;
+}
+
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+.text-input label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+text input,
+form textarea {
+  font: 1em;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: blue;
+}
+
+[type="checkbox"] {
+    vertical-align: middle;
+    margin-left: 5rem;
+    margin-right: 1rem;
+}
+
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: none;
+}
+
+.form-button {
+  margin-left: 5rem;
+}
+
+form button {
+    padding: 5px 10px;
+    background-color: #0b7df0;
+    border: 1px solid #0b7df0;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #FFF;
+    color: #0b7df0;
+}
+
+/* Media query */
+@media (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .menu-selector {
+        flex-direction: column;
+    }
+
+    .menu-selector button {
+        margin-bottom: 10px;;
+    }
+}
