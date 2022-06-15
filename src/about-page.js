@@ -2,6 +2,11 @@ import { createFooter, createNavbar } from "./main-page";
 import { Loader } from "@googlemaps/js-api-loader";
 import diningArea from './img/dining-area.jpg';
 import bigTony from './img/abdalla-m-uTaSlu2Jfsg-unsplash.jpg'
+import mozParm from './img/chicken-2308650312.jpg'
+import calamari from './img/dushanbe-serena-hotel.jpg'
+import pizza from './img/main-qimg-ad38fef62b1b7156b19aeee7e96571d7-lq.jpeg'
+import alfredo from './img/worst-pasta-ive-ever.jpg'
+import lasagna from './img/same-bad-sauce-smothered.jpg'
 
 export function createAbout() {
     const contentDiv = document.getElementById('content');
@@ -23,25 +28,95 @@ export function createAbout() {
     const aboutHeaderH3 = document.createElement('h3');
     aboutHeaderH3.innerText = '26 Passaic St, Trenton, NJ 08618';
     aboutHeader.appendChild(aboutHeaderH3);
-    const mapDiv = document.createElement('div');
-    mapDiv.setAttribute('id', 'map');
-    aboutHeader.appendChild(mapDiv);
-    const loader = new Loader({
-        apiKey: "AIzaSyDphUrDCc_FIRm97bUrejtUvW94nTHVCIc",
-        version: "weekly",
-        });
-        
-        let restPos = { lat: 40.2235464, lng: -74.7702636 };
-        loader.load().then(() => {
-        let map = new google.maps.Map(document.getElementById("map"), {
-            center: restPos,
-            zoom: 18,
-        })
-        let marker = new google.maps.Marker({
-            position: restPos,
-            map: map
-        })
-    });
+    const imgCarousel = document.createElement('div');
+    imgCarousel.setAttribute('id', 'carousel');
+    imgCarousel.classList.add('carousel');
+    imgCarousel.setAttribute('aria-label', 'Photos of our wonderful grub')
+    aboutHeader.appendChild(imgCarousel);
+    const prevBtn = document.createElement('button');
+    prevBtn.classList.add('carousel-button');
+    prevBtn.classList.add('prev');
+    prevBtn.innerText = '⇽';
+    imgCarousel.appendChild(prevBtn);
+    const nextBtn = document.createElement('button');
+    nextBtn.classList.add('carousel-button');
+    nextBtn.classList.add('next');
+    nextBtn.innerText = '⇾';
+    imgCarousel.appendChild(nextBtn);
+    const navDiv = document.createElement('div')
+    navDiv.classList.add('nav-div')
+    imgCarousel.appendChild(navDiv)
+    const navRadio1 = document.createElement('div')
+    navRadio1.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio1)
+    const navRadio2 = document.createElement('div')
+    navRadio2.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio2)
+    const navRadio3 = document.createElement('div')
+    navRadio3.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio3)
+    const navRadio4 = document.createElement('div')
+    navRadio4.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio4)
+    const navRadio5 = document.createElement('div')
+    navRadio5.classList.add('img-nav-button')
+    navRadio5.classList.add('active')
+    navDiv.appendChild(navRadio5)
+
+    const slidesList = document.createElement('ul');
+    slidesList.classList.add('slides');
+    imgCarousel.appendChild(slidesList);
+    
+    const slide1 = document.createElement('li');
+    slide1.classList.add('slide');
+    slidesList.appendChild(slide1);
+    const slide1Img = document.createElement('img');
+    slide1Img.classList.add('slide-img')
+    slide1Img.setAttribute('src', mozParm);
+    slide1Img.setAttribute('alt', 'Photo of our beautiful mozarella stick parm.');
+    slide1.appendChild(slide1Img);
+
+    const slide2 = document.createElement('li');
+    slide2.classList.add('slide');
+    slidesList.appendChild(slide2);
+    const slide2Img = document.createElement('img');
+    slide2Img.classList.add('slide-img')
+    slide2Img.setAttribute('src', calamari);
+    slide2Img.setAttribute('alt', 'Photo of our delectable calamari.');
+    slide2.appendChild(slide2Img);
+
+    const slide3 = document.createElement('li');
+    slide3.classList.add('slide');
+    slidesList.appendChild(slide3);
+    const slide3Img = document.createElement('img');
+    slide3Img.classList.add('slide-img')
+    slide3Img.setAttribute('src', pizza);
+    slide3Img.setAttribute('alt', 'Photo of our unrivaled pizza.');
+    slide3.appendChild(slide3Img);
+
+    const slide4 = document.createElement('li');
+    slide4.classList.add('slide');
+    slidesList.appendChild(slide4);
+    const slide4Img = document.createElement('img');
+    slide4Img.classList.add('slide-img')
+    slide4Img.setAttribute('src', alfredo);
+    slide4Img.setAttribute('alt', 'Photo of our wonderful alfredo pasta.');
+    slide4.appendChild(slide4Img);
+
+    const slide5 = document.createElement('li');
+    slide5.classList.add('slide');
+    slide5.classList.add('active');
+    slidesList.appendChild(slide5);
+    const slide5Img = document.createElement('img');
+    slide5Img.classList.add('slide-img')
+    slide5Img.setAttribute('src', lasagna);
+    slide5Img.setAttribute('alt', 'Photo of our scrumptious lasagna.');
+    slide5.appendChild(slide5Img);
+
+    carouselBtnEvent(prevBtn);
+    carouselBtnEvent(nextBtn);
+
+
     const restaurantInfo = document.createElement('div');
     restaurantInfo.classList.add('restaurant-info');
     aboutContent.appendChild(restaurantInfo);
@@ -87,4 +162,35 @@ export function createAbout() {
     chefTextP.innerText = 'Executive chef Randal A. Kowolski has studied under the master Italian chefs of the greater Trenton area for more than 20 years. His life journey has allowed him to explore the depths of Italian cuisine and emboldened him to experiment with the timeless culinary history. As Randal always says, \"When your here, you\'re a member of my family\"'
     chefText.appendChild(chefTextP);
     createFooter();
+    
+    advanceSlider();
+}
+
+
+function carouselBtnEvent(button) {
+    button.addEventListener('click', () => {
+        const offset = button.classList.contains('next') ? 1 : -1
+        advanceSlider(offset);
+    })
+}
+
+let timeoutId
+
+function advanceSlider(offset = 1) {
+    const slides = document.querySelector('.slides')
+    const activeSlide = slides.querySelector('.active')
+    const navButtonDiv = document.querySelector('.nav-div')
+    const activeNavBtn = navButtonDiv.querySelector('.active')
+    let newSlideIndex = [...slides.children].indexOf(activeSlide) + offset
+    if (newSlideIndex < 0) newSlideIndex = slides.children.length - 1
+    if (newSlideIndex >= slides.children.length) newSlideIndex = 0
+
+    slides.children[newSlideIndex].classList.add('active');
+    activeSlide.classList.remove('active')
+
+    navButtonDiv.children[newSlideIndex].classList.add('active')
+    activeNavBtn.classList.remove('active')
+
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(advanceSlider, 5000)
 }

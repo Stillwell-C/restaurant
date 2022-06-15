@@ -1,4 +1,5 @@
 import { createNavbar, createFooter } from "./main-page";
+import { Loader } from "@googlemaps/js-api-loader";
 
 export function createContact() {
     const contentDiv = document.getElementById('content');
@@ -26,6 +27,27 @@ export function createContact() {
     const contactHeaderH3Three = document.createElement('h3');
     contactHeaderH3Three.innerText = 'Open Tues. - Sun. 11am to 10pm';
     contactHeader.appendChild(contactHeaderH3Three);
+
+    const mapDiv = document.createElement('div');
+    mapDiv.setAttribute('id', 'map');
+    contactHeader.appendChild(mapDiv);
+    const loader = new Loader({
+        apiKey: "/////",
+        version: "weekly",
+        });
+        
+        let restPos = { lat: 40.2235464, lng: -74.7702636 };
+        loader.load().then(() => {
+        let map = new google.maps.Map(document.getElementById("map"), {
+            center: restPos,
+            zoom: 18,
+        })
+        let marker = new google.maps.Marker({
+            position: restPos,
+            map: map
+        })
+    });
+
     const form = document.createElement('form');
     form.setAttribute('action', '#');
     form.setAttribute('method', 'post');
