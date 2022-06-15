@@ -363,7 +363,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.c
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* font-family: 'Akshar', sans-serif; */\n/* font-family: 'Courgette', cursive; */\n\n* {\n    font-family: 'Akshar', sans-serif;\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}\n\n/* Navbar, container, and footer */\n#container {\n    height: 100vh;\n    display: flex;\n    flex: auto;\n    flex-direction: column;\n    justify-content: space-between;\n    align-content: center;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n}\n\n#navbar {\n    flex-grow: 0;\n    overflow: hidden;\n    width: 100vw;\n    padding: 20px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: rgba(0, 0, 0, .5);\n}\n\n#navbar button {\n    background: none;\n    border: none;\n    color: #FFF;\n    font-size: 1.3rem;\n    margin: 0 15px;\n}\n\n#navbar button:hover {\n    text-decoration: underline;\n}\n\n.footer {\n    flex-grow: 0;\n    display: flex;\n    justify-content: center;\n    align-content: center;\n    margin: 15px;\n    color: #FFF;\n}\n\n#page-content-container {\n    flex: 1;\n    overflow-y: auto;\n}\n\n/* Main page */\n.words {\n    color: #FFF;\n    text-align: center;\n    padding: 10px;\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    justify-content: center;\n}\n\n.main-container .name {\n    font-size: 4rem;\n    font-family: 'Courgette', cursive;\n}\n\n.main-container .name-text {\n    font-size: 2rem;\n    font-family: 'Akshar', sans-serif;\n}\n\n\n/* Menu Page */\n\n.menu-content {\n    width: 100%;\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.menu-header {\n    margin: 20px;\n}\n\n.menu-selector {\n    margin-bottom: 40px;\n    display: flex;\n    justify-content: center;\n\n}\n\n.menu-selector button {\n    background: none;\n    border: none;\n    color: black;\n    font-size: 1.2rem;\n    margin: 0 15px;\n}\n\n.menu-selector button:hover {\n    transform: scale(.95);\n    transition: 300ms;\n\n}\n\n.menu-display {\n    max-width: 450px;\n    text-align: center;\n}\n\n/* menu title*/\n\n.menu-title {\n    margin: 20px 0;\n    font-size: 1.8rem;\n}\n\n.menu-title-p {\n    margin-top: -10px;\n    margin-bottom: 20px;\n    font-size: 1rem;\n}\n\n.menu-item{\n    margin-bottom: 15px;\n}\n\n.menu-item h2{\n    font-size: 1.5rem;\n}\n\n.menu-item p {\n    font-size: 1rem\n}\n\n.menu-item-top-space {\n    margin-top: 40px;\n}\n\n/* About page */\n\n\n.about-content {\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    align-items: center;\n    justify-content: flex-start;\n    background-color: #FFF;\n    \n}\n\n.about-header {\n    text-align: center;\n    margin: 20px 0;\n}\n\n.about-container #map {\n    margin: 20px 0;\n    height: 400px;\n    width: 400px;\n}\n\n.chef-info,\n.restaurant-info {\n    max-width: 400px;\n    margin: 20px 0;\n}\n\n.restaurant-info h2 {\n    font-size: 1.8rem;\n    text-align: center;\n    margin-bottom: 5px;\n}\n\n.about-content img {\n    max-width: 400px; \n    margin-bottom: 5px;\n}\n\n.chef-text {\n    text-align: center;\n}\n\n/* contact page */\n\n.contact-content {\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n}\n\n.contact-header {\n    margin-top: 20px;\n    text-align: center;\n}\n\nform h2 {\n    text-align: center;\n    margin-bottom: 15px;;\n}\n\n.contact-content form {\n    margin-top: 40px;\n    max-width: 500px;\n}\n\n.contact-content ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n}\n\nform li + li {\n    margin-top: 1em;\n}\n\n.text-input label {\n    display: inline-block;\n    width: 90px;\n    text-align: right;\n    margin-right: 1rem;\n}\n\ntext input,\nform textarea {\n  font: 1em;\n  width: 300px;\n  box-sizing: border-box;\n  border: 1px solid #999;\n}\n\nform input:focus,\nform textarea:focus {\n  border-color: blue;\n}\n\n[type=\"checkbox\"] {\n    vertical-align: middle;\n    margin-left: 5rem;\n    margin-right: 1rem;\n}\n\n\ntextarea {\n  vertical-align: top;\n  height: 5em;\n  resize: none;\n}\n\n.form-button {\n  margin-left: 5rem;\n}\n\nform button {\n    padding: 5px 10px;\n    background-color: #0b7df0;\n    border: 1px solid #0b7df0;\n    color: #FFF;\n    border-radius: 5px;\n}\n\nform button:hover {\n    background-color: #FFF;\n    color: #0b7df0;\n}\n\n/* Media query */\n@media (max-width: 500px) {\n    #navbar {\n        flex-direction: column;\n    }\n\n    .menu-selector {\n        flex-direction: column;\n    }\n\n    .menu-selector button {\n        margin-bottom: 10px;;\n    }\n}", "",{"version":3,"sources":["webpack://./src/main.css"],"names":[],"mappings":"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","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');\n/* font-family: 'Akshar', sans-serif; */\n@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');\n/* font-family: 'Courgette', cursive; */\n\n* {\n    font-family: 'Akshar', sans-serif;\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}\n\n/* Navbar, container, and footer */\n#container {\n    height: 100vh;\n    display: flex;\n    flex: auto;\n    flex-direction: column;\n    justify-content: space-between;\n    align-content: center;\n    background-image: url(../src/img/gabriella-clare-marino-F6AkaAzN4lk-unsplash.jpg);\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n}\n\n#navbar {\n    flex-grow: 0;\n    overflow: hidden;\n    width: 100vw;\n    padding: 20px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: rgba(0, 0, 0, .5);\n}\n\n#navbar button {\n    background: none;\n    border: none;\n    color: #FFF;\n    font-size: 1.3rem;\n    margin: 0 15px;\n}\n\n#navbar button:hover {\n    text-decoration: underline;\n}\n\n.footer {\n    flex-grow: 0;\n    display: flex;\n    justify-content: center;\n    align-content: center;\n    margin: 15px;\n    color: #FFF;\n}\n\n#page-content-container {\n    flex: 1;\n    overflow-y: auto;\n}\n\n/* Main page */\n.words {\n    color: #FFF;\n    text-align: center;\n    padding: 10px;\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    justify-content: center;\n}\n\n.main-container .name {\n    font-size: 4rem;\n    font-family: 'Courgette', cursive;\n}\n\n.main-container .name-text {\n    font-size: 2rem;\n    font-family: 'Akshar', sans-serif;\n}\n\n\n/* Menu Page */\n\n.menu-content {\n    width: 100%;\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.menu-header {\n    margin: 20px;\n}\n\n.menu-selector {\n    margin-bottom: 40px;\n    display: flex;\n    justify-content: center;\n\n}\n\n.menu-selector button {\n    background: none;\n    border: none;\n    color: black;\n    font-size: 1.2rem;\n    margin: 0 15px;\n}\n\n.menu-selector button:hover {\n    transform: scale(.95);\n    transition: 300ms;\n\n}\n\n.menu-display {\n    max-width: 450px;\n    text-align: center;\n}\n\n/* menu title*/\n\n.menu-title {\n    margin: 20px 0;\n    font-size: 1.8rem;\n}\n\n.menu-title-p {\n    margin-top: -10px;\n    margin-bottom: 20px;\n    font-size: 1rem;\n}\n\n.menu-item{\n    margin-bottom: 15px;\n}\n\n.menu-item h2{\n    font-size: 1.5rem;\n}\n\n.menu-item p {\n    font-size: 1rem\n}\n\n.menu-item-top-space {\n    margin-top: 40px;\n}\n\n/* About page */\n\n\n.about-content {\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    align-items: center;\n    justify-content: flex-start;\n    background-color: #FFF;\n    \n}\n\n.about-header {\n    text-align: center;\n    margin: 20px 0;\n}\n\n.about-container #map {\n    margin: 20px 0;\n    height: 400px;\n    width: 400px;\n}\n\n.chef-info,\n.restaurant-info {\n    max-width: 400px;\n    margin: 20px 0;\n}\n\n.restaurant-info h2 {\n    font-size: 1.8rem;\n    text-align: center;\n    margin-bottom: 5px;\n}\n\n.about-content img {\n    max-width: 400px; \n    margin-bottom: 5px;\n}\n\n.chef-text {\n    text-align: center;\n}\n\n/* contact page */\n\n.contact-content {\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n}\n\n.contact-header {\n    margin-top: 20px;\n    text-align: center;\n}\n\nform h2 {\n    text-align: center;\n    margin-bottom: 15px;;\n}\n\n.contact-content form {\n    margin-top: 40px;\n    max-width: 500px;\n}\n\n.contact-content ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n}\n\nform li + li {\n    margin-top: 1em;\n}\n\n.text-input label {\n    display: inline-block;\n    width: 90px;\n    text-align: right;\n    margin-right: 1rem;\n}\n\ntext input,\nform textarea {\n  font: 1em;\n  width: 300px;\n  box-sizing: border-box;\n  border: 1px solid #999;\n}\n\nform input:focus,\nform textarea:focus {\n  border-color: blue;\n}\n\n[type=\"checkbox\"] {\n    vertical-align: middle;\n    margin-left: 5rem;\n    margin-right: 1rem;\n}\n\n\ntextarea {\n  vertical-align: top;\n  height: 5em;\n  resize: none;\n}\n\n.form-button {\n  margin-left: 5rem;\n}\n\nform button {\n    padding: 5px 10px;\n    background-color: #0b7df0;\n    border: 1px solid #0b7df0;\n    color: #FFF;\n    border-radius: 5px;\n}\n\nform button:hover {\n    background-color: #FFF;\n    color: #0b7df0;\n}\n\n/* Media query */\n@media (max-width: 500px) {\n    #navbar {\n        flex-direction: column;\n    }\n\n    .menu-selector {\n        flex-direction: column;\n    }\n\n    .menu-selector button {\n        margin-bottom: 10px;;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* font-family: 'Akshar', sans-serif; */\n/* font-family: 'Courgette', cursive; */\n\n* {\n    font-family: 'Akshar', sans-serif;\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}\n\n/* Navbar, container, and footer */\n#container {\n    height: 100vh;\n    display: flex;\n    flex: auto;\n    flex-direction: column;\n    justify-content: space-between;\n    align-content: center;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n}\n\n#navbar {\n    flex-grow: 0;\n    overflow: hidden;\n    width: 100vw;\n    padding: 20px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: rgba(0, 0, 0, .5);\n}\n\n#navbar button {\n    background: none;\n    border: none;\n    color: #FFF;\n    font-size: 1.3rem;\n    margin: 0 15px;\n}\n\n#navbar button:hover {\n    text-decoration: underline;\n}\n\n.footer {\n    flex-grow: 0;\n    display: flex;\n    justify-content: center;\n    align-content: center;\n    margin: 15px;\n    color: #FFF;\n}\n\n#page-content-container {\n    flex: 1;\n    overflow-y: auto;\n}\n\n/* Main page */\n.words {\n    color: #FFF;\n    text-align: center;\n    padding: 10px;\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    justify-content: center;\n}\n\n.main-container .name {\n    font-size: 4rem;\n    font-family: 'Courgette', cursive;\n}\n\n.main-container .name-text {\n    font-size: 2rem;\n    font-family: 'Akshar', sans-serif;\n}\n\n\n/* Menu Page */\n\n.menu-content {\n    width: 100%;\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.menu-header {\n    margin: 20px;\n}\n\n.menu-selector {\n    margin-bottom: 40px;\n    display: flex;\n    justify-content: center;\n\n}\n\n.menu-selector button {\n    background: none;\n    border: none;\n    color: black;\n    font-size: 1.2rem;\n    margin: 0 15px;\n}\n\n.menu-selector button:hover {\n    transform: scale(.95);\n    transition: 300ms;\n\n}\n\n.menu-display {\n    max-width: 450px;\n    text-align: center;\n}\n\n/* menu title*/\n\n.menu-title {\n    margin: 20px 0;\n    font-size: 1.8rem;\n}\n\n.menu-title-p {\n    margin-top: -10px;\n    margin-bottom: 20px;\n    font-size: 1rem;\n}\n\n.menu-item{\n    margin-bottom: 15px;\n}\n\n.menu-item h2{\n    font-size: 1.5rem;\n}\n\n.menu-item p {\n    font-size: 1rem\n}\n\n.menu-item-top-space {\n    margin-top: 40px;\n}\n\n/* About page */\n\n\n.about-content {\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    align-items: center;\n    justify-content: flex-start;\n    background-color: #FFF;\n    \n}\n\n.about-header {\n    text-align: center;\n    margin: 20px 0;\n}\n\n.carousel {\n    margin: 20px 0;\n    height: 400px;\n    width: 400px;\n    margin-left: 5px;\n    position: relative;\n}\n\n.slide {\n    margin-top: 20px;\n    position: absolute;\n    list-style: none;\n    opacity: 0;\n    transition: 300ms opacity ease-in-out;\n    transition-delay: 300ms;\n    height: 400px;\n    width: 400px;\n}\n\n.slide.active {\n    opacity: 1;\n    z-index: 1;\n    transition-delay: 0ms;\n}\n\n.slide img {\n    /* display: block; */\n    object-fit: cover;\n    height: 100%;\n    width: 100%;\n    object-position: center;\n}\n\n.carousel-button {\n    position: absolute;\n    z-index: 2;\n    background: none;\n    border: none;\n    vertical-align: center;\n    font-size: 2rem;\n    top: 97%;\n    transform: translateY(-50%);\n    color: rgba(255, 255, 255, .8);\n    cursor: pointer;\n    border-radius: .25rem;\n    padding: 0 .5rem;\n    background-color: rgba(0, 0, 0, .4);\n}\n\n.nav-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n    position: absolute;\n    width: 250px;\n    top: 97%;\n    right: 75px;\n    cursor: pointer;\n}\n\n.img-nav-button {\n    width: 1rem;\n    height: 1rem;\n    position: relative;\n}\n\n.img-nav-button::before,\n.img-nav-button::after {\n    content: '';\n    position: absolute;\n    border-radius: 50%;\n}\n\n.img-nav-button::before {\n    width: .5rem;\n    height: .5rem;\n    border: #fff 2px solid;\n}\n\n.nav-div > .active::after {\n    width: .7rem;\n    height: .7rem;\n    background-color: white;\n}\n\n.carousel-button:hover,\n.carousel-button:focus {\n    color: #fff;\n    background-color: rgba(0, 0, 0, .2);\n}\n\n.carousel-button:focus {\n    outline: 1px solid black;\n}\n\n.carousel-button.prev {\n    left: .2rem;\n}\n\n.carousel-button.next {\n    right: .2rem;\n}\n\n.chef-info,\n.restaurant-info {\n    max-width: 400px;\n    margin: 20px 0;\n}\n\n.restaurant-info h2 {\n    font-size: 1.8rem;\n    text-align: center;\n    margin-bottom: 5px;\n}\n\n.about-content img {\n    max-width: 400px; \n    margin-bottom: 5px;\n}\n\n.chef-text {\n    text-align: center;\n}\n\n/* contact page */\n\n.contact-content {\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n}\n\n.contact-header {\n    margin-top: 20px;\n    text-align: center;\n}\n\n#map {\n    margin: 20px 0;\n    height: 400px;\n    width: 400px;\n}\n\nform h2 {\n    text-align: center;\n    margin-bottom: 15px;;\n}\n\n.contact-content form {\n    margin-top: 40px;\n    max-width: 500px;\n}\n\n.contact-content ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n}\n\nform li + li {\n    margin-top: 1em;\n}\n\n.text-input label {\n    display: inline-block;\n    width: 90px;\n    text-align: right;\n    margin-right: 1rem;\n}\n\ntext input,\nform textarea {\n  font: 1em;\n  width: 300px;\n  box-sizing: border-box;\n  border: 1px solid #999;\n}\n\nform input:focus,\nform textarea:focus {\n  border-color: blue;\n}\n\n[type=\"checkbox\"] {\n    vertical-align: middle;\n    margin-left: 5rem;\n    margin-right: 1rem;\n}\n\n\ntextarea {\n  vertical-align: top;\n  height: 5em;\n  resize: none;\n}\n\n.form-button {\n  margin-left: 5rem;\n}\n\nform button {\n    padding: 5px 10px;\n    background-color: #0b7df0;\n    border: 1px solid #0b7df0;\n    color: #FFF;\n    border-radius: 5px;\n}\n\nform button:hover {\n    background-color: #FFF;\n    color: #0b7df0;\n}\n\n/* Media query */\n@media (max-width: 500px) {\n    #navbar {\n        flex-direction: column;\n    }\n\n    .menu-selector {\n        flex-direction: column;\n    }\n\n    .menu-selector button {\n        margin-bottom: 10px;;\n    }\n}", "",{"version":3,"sources":["webpack://./src/main.css"],"names":[],"mappings":"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","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');\n/* font-family: 'Akshar', sans-serif; */\n@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');\n/* font-family: 'Courgette', cursive; */\n\n* {\n    font-family: 'Akshar', sans-serif;\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}\n\n/* Navbar, container, and footer */\n#container {\n    height: 100vh;\n    display: flex;\n    flex: auto;\n    flex-direction: column;\n    justify-content: space-between;\n    align-content: center;\n    background-image: url(../src/img/gabriella-clare-marino-F6AkaAzN4lk-unsplash.jpg);\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n}\n\n#navbar {\n    flex-grow: 0;\n    overflow: hidden;\n    width: 100vw;\n    padding: 20px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: rgba(0, 0, 0, .5);\n}\n\n#navbar button {\n    background: none;\n    border: none;\n    color: #FFF;\n    font-size: 1.3rem;\n    margin: 0 15px;\n}\n\n#navbar button:hover {\n    text-decoration: underline;\n}\n\n.footer {\n    flex-grow: 0;\n    display: flex;\n    justify-content: center;\n    align-content: center;\n    margin: 15px;\n    color: #FFF;\n}\n\n#page-content-container {\n    flex: 1;\n    overflow-y: auto;\n}\n\n/* Main page */\n.words {\n    color: #FFF;\n    text-align: center;\n    padding: 10px;\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    justify-content: center;\n}\n\n.main-container .name {\n    font-size: 4rem;\n    font-family: 'Courgette', cursive;\n}\n\n.main-container .name-text {\n    font-size: 2rem;\n    font-family: 'Akshar', sans-serif;\n}\n\n\n/* Menu Page */\n\n.menu-content {\n    width: 100%;\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.menu-header {\n    margin: 20px;\n}\n\n.menu-selector {\n    margin-bottom: 40px;\n    display: flex;\n    justify-content: center;\n\n}\n\n.menu-selector button {\n    background: none;\n    border: none;\n    color: black;\n    font-size: 1.2rem;\n    margin: 0 15px;\n}\n\n.menu-selector button:hover {\n    transform: scale(.95);\n    transition: 300ms;\n\n}\n\n.menu-display {\n    max-width: 450px;\n    text-align: center;\n}\n\n/* menu title*/\n\n.menu-title {\n    margin: 20px 0;\n    font-size: 1.8rem;\n}\n\n.menu-title-p {\n    margin-top: -10px;\n    margin-bottom: 20px;\n    font-size: 1rem;\n}\n\n.menu-item{\n    margin-bottom: 15px;\n}\n\n.menu-item h2{\n    font-size: 1.5rem;\n}\n\n.menu-item p {\n    font-size: 1rem\n}\n\n.menu-item-top-space {\n    margin-top: 40px;\n}\n\n/* About page */\n\n\n.about-content {\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    align-items: center;\n    justify-content: flex-start;\n    background-color: #FFF;\n    \n}\n\n.about-header {\n    text-align: center;\n    margin: 20px 0;\n}\n\n.carousel {\n    margin: 20px 0;\n    height: 400px;\n    width: 400px;\n    margin-left: 5px;\n    position: relative;\n}\n\n.slide {\n    margin-top: 20px;\n    position: absolute;\n    list-style: none;\n    opacity: 0;\n    transition: 300ms opacity ease-in-out;\n    transition-delay: 300ms;\n    height: 400px;\n    width: 400px;\n}\n\n.slide.active {\n    opacity: 1;\n    z-index: 1;\n    transition-delay: 0ms;\n}\n\n.slide img {\n    /* display: block; */\n    object-fit: cover;\n    height: 100%;\n    width: 100%;\n    object-position: center;\n}\n\n.carousel-button {\n    position: absolute;\n    z-index: 2;\n    background: none;\n    border: none;\n    vertical-align: center;\n    font-size: 2rem;\n    top: 97%;\n    transform: translateY(-50%);\n    color: rgba(255, 255, 255, .8);\n    cursor: pointer;\n    border-radius: .25rem;\n    padding: 0 .5rem;\n    background-color: rgba(0, 0, 0, .4);\n}\n\n.nav-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n    position: absolute;\n    width: 250px;\n    top: 97%;\n    right: 75px;\n    cursor: pointer;\n}\n\n.img-nav-button {\n    width: 1rem;\n    height: 1rem;\n    position: relative;\n}\n\n.img-nav-button::before,\n.img-nav-button::after {\n    content: '';\n    position: absolute;\n    border-radius: 50%;\n}\n\n.img-nav-button::before {\n    width: .5rem;\n    height: .5rem;\n    border: #fff 2px solid;\n}\n\n.nav-div > .active::after {\n    width: .7rem;\n    height: .7rem;\n    background-color: white;\n}\n\n.carousel-button:hover,\n.carousel-button:focus {\n    color: #fff;\n    background-color: rgba(0, 0, 0, .2);\n}\n\n.carousel-button:focus {\n    outline: 1px solid black;\n}\n\n.carousel-button.prev {\n    left: .2rem;\n}\n\n.carousel-button.next {\n    right: .2rem;\n}\n\n.chef-info,\n.restaurant-info {\n    max-width: 400px;\n    margin: 20px 0;\n}\n\n.restaurant-info h2 {\n    font-size: 1.8rem;\n    text-align: center;\n    margin-bottom: 5px;\n}\n\n.about-content img {\n    max-width: 400px; \n    margin-bottom: 5px;\n}\n\n.chef-text {\n    text-align: center;\n}\n\n/* contact page */\n\n.contact-content {\n    background-color: #FFF;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n}\n\n.contact-header {\n    margin-top: 20px;\n    text-align: center;\n}\n\n#map {\n    margin: 20px 0;\n    height: 400px;\n    width: 400px;\n}\n\nform h2 {\n    text-align: center;\n    margin-bottom: 15px;;\n}\n\n.contact-content form {\n    margin-top: 40px;\n    max-width: 500px;\n}\n\n.contact-content ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n}\n\nform li + li {\n    margin-top: 1em;\n}\n\n.text-input label {\n    display: inline-block;\n    width: 90px;\n    text-align: right;\n    margin-right: 1rem;\n}\n\ntext input,\nform textarea {\n  font: 1em;\n  width: 300px;\n  box-sizing: border-box;\n  border: 1px solid #999;\n}\n\nform input:focus,\nform textarea:focus {\n  border-color: blue;\n}\n\n[type=\"checkbox\"] {\n    vertical-align: middle;\n    margin-left: 5rem;\n    margin-right: 1rem;\n}\n\n\ntextarea {\n  vertical-align: top;\n  height: 5em;\n  resize: none;\n}\n\n.form-button {\n  margin-left: 5rem;\n}\n\nform button {\n    padding: 5px 10px;\n    background-color: #0b7df0;\n    border: 1px solid #0b7df0;\n    color: #FFF;\n    border-radius: 5px;\n}\n\nform button:hover {\n    background-color: #FFF;\n    color: #0b7df0;\n}\n\n/* Media query */\n@media (max-width: 500px) {\n    #navbar {\n        flex-direction: column;\n    }\n\n    .menu-selector {\n        flex-direction: column;\n    }\n\n    .menu-selector button {\n        margin-bottom: 10px;;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -924,6 +924,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @googlemaps/js-api-loader */ "./node_modules/@googlemaps/js-api-loader/dist/index.esm.js");
 /* harmony import */ var _img_dining_area_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/dining-area.jpg */ "./src/img/dining-area.jpg");
 /* harmony import */ var _img_abdalla_m_uTaSlu2Jfsg_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/abdalla-m-uTaSlu2Jfsg-unsplash.jpg */ "./src/img/abdalla-m-uTaSlu2Jfsg-unsplash.jpg");
+/* harmony import */ var _img_chicken_2308650312_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/chicken-2308650312.jpg */ "./src/img/chicken-2308650312.jpg");
+/* harmony import */ var _img_dushanbe_serena_hotel_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/dushanbe-serena-hotel.jpg */ "./src/img/dushanbe-serena-hotel.jpg");
+/* harmony import */ var _img_main_qimg_ad38fef62b1b7156b19aeee7e96571d7_lq_jpeg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/main-qimg-ad38fef62b1b7156b19aeee7e96571d7-lq.jpeg */ "./src/img/main-qimg-ad38fef62b1b7156b19aeee7e96571d7-lq.jpeg");
+/* harmony import */ var _img_worst_pasta_ive_ever_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/worst-pasta-ive-ever.jpg */ "./src/img/worst-pasta-ive-ever.jpg");
+/* harmony import */ var _img_same_bad_sauce_smothered_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/same-bad-sauce-smothered.jpg */ "./src/img/same-bad-sauce-smothered.jpg");
+
+
+
+
+
 
 
 
@@ -949,25 +959,95 @@ function createAbout() {
     const aboutHeaderH3 = document.createElement('h3');
     aboutHeaderH3.innerText = '26 Passaic St, Trenton, NJ 08618';
     aboutHeader.appendChild(aboutHeaderH3);
-    const mapDiv = document.createElement('div');
-    mapDiv.setAttribute('id', 'map');
-    aboutHeader.appendChild(mapDiv);
-    const loader = new _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_1__.Loader({
-        apiKey: "AIzaSyDphUrDCc_FIRm97bUrejtUvW94nTHVCIc",
-        version: "weekly",
-        });
-        
-        let restPos = { lat: 40.2235464, lng: -74.7702636 };
-        loader.load().then(() => {
-        let map = new google.maps.Map(document.getElementById("map"), {
-            center: restPos,
-            zoom: 18,
-        })
-        let marker = new google.maps.Marker({
-            position: restPos,
-            map: map
-        })
-    });
+    const imgCarousel = document.createElement('div');
+    imgCarousel.setAttribute('id', 'carousel');
+    imgCarousel.classList.add('carousel');
+    imgCarousel.setAttribute('aria-label', 'Photos of our wonderful grub')
+    aboutHeader.appendChild(imgCarousel);
+    const prevBtn = document.createElement('button');
+    prevBtn.classList.add('carousel-button');
+    prevBtn.classList.add('prev');
+    prevBtn.innerText = '⇽';
+    imgCarousel.appendChild(prevBtn);
+    const nextBtn = document.createElement('button');
+    nextBtn.classList.add('carousel-button');
+    nextBtn.classList.add('next');
+    nextBtn.innerText = '⇾';
+    imgCarousel.appendChild(nextBtn);
+    const navDiv = document.createElement('div')
+    navDiv.classList.add('nav-div')
+    imgCarousel.appendChild(navDiv)
+    const navRadio1 = document.createElement('div')
+    navRadio1.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio1)
+    const navRadio2 = document.createElement('div')
+    navRadio2.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio2)
+    const navRadio3 = document.createElement('div')
+    navRadio3.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio3)
+    const navRadio4 = document.createElement('div')
+    navRadio4.classList.add('img-nav-button')
+    navDiv.appendChild(navRadio4)
+    const navRadio5 = document.createElement('div')
+    navRadio5.classList.add('img-nav-button')
+    navRadio5.classList.add('active')
+    navDiv.appendChild(navRadio5)
+
+    const slidesList = document.createElement('ul');
+    slidesList.classList.add('slides');
+    imgCarousel.appendChild(slidesList);
+    
+    const slide1 = document.createElement('li');
+    slide1.classList.add('slide');
+    slidesList.appendChild(slide1);
+    const slide1Img = document.createElement('img');
+    slide1Img.classList.add('slide-img')
+    slide1Img.setAttribute('src', _img_chicken_2308650312_jpg__WEBPACK_IMPORTED_MODULE_4__);
+    slide1Img.setAttribute('alt', 'Photo of our beautiful mozarella stick parm.');
+    slide1.appendChild(slide1Img);
+
+    const slide2 = document.createElement('li');
+    slide2.classList.add('slide');
+    slidesList.appendChild(slide2);
+    const slide2Img = document.createElement('img');
+    slide2Img.classList.add('slide-img')
+    slide2Img.setAttribute('src', _img_dushanbe_serena_hotel_jpg__WEBPACK_IMPORTED_MODULE_5__);
+    slide2Img.setAttribute('alt', 'Photo of our delectable calamari.');
+    slide2.appendChild(slide2Img);
+
+    const slide3 = document.createElement('li');
+    slide3.classList.add('slide');
+    slidesList.appendChild(slide3);
+    const slide3Img = document.createElement('img');
+    slide3Img.classList.add('slide-img')
+    slide3Img.setAttribute('src', _img_main_qimg_ad38fef62b1b7156b19aeee7e96571d7_lq_jpeg__WEBPACK_IMPORTED_MODULE_6__);
+    slide3Img.setAttribute('alt', 'Photo of our unrivaled pizza.');
+    slide3.appendChild(slide3Img);
+
+    const slide4 = document.createElement('li');
+    slide4.classList.add('slide');
+    slidesList.appendChild(slide4);
+    const slide4Img = document.createElement('img');
+    slide4Img.classList.add('slide-img')
+    slide4Img.setAttribute('src', _img_worst_pasta_ive_ever_jpg__WEBPACK_IMPORTED_MODULE_7__);
+    slide4Img.setAttribute('alt', 'Photo of our wonderful alfredo pasta.');
+    slide4.appendChild(slide4Img);
+
+    const slide5 = document.createElement('li');
+    slide5.classList.add('slide');
+    slide5.classList.add('active');
+    slidesList.appendChild(slide5);
+    const slide5Img = document.createElement('img');
+    slide5Img.classList.add('slide-img')
+    slide5Img.setAttribute('src', _img_same_bad_sauce_smothered_jpg__WEBPACK_IMPORTED_MODULE_8__);
+    slide5Img.setAttribute('alt', 'Photo of our scrumptious lasagna.');
+    slide5.appendChild(slide5Img);
+
+    carouselBtnEvent(prevBtn);
+    carouselBtnEvent(nextBtn);
+
+
     const restaurantInfo = document.createElement('div');
     restaurantInfo.classList.add('restaurant-info');
     aboutContent.appendChild(restaurantInfo);
@@ -1013,8 +1093,38 @@ function createAbout() {
     chefTextP.innerText = 'Executive chef Randal A. Kowolski has studied under the master Italian chefs of the greater Trenton area for more than 20 years. His life journey has allowed him to explore the depths of Italian cuisine and emboldened him to experiment with the timeless culinary history. As Randal always says, \"When your here, you\'re a member of my family\"'
     chefText.appendChild(chefTextP);
     (0,_main_page__WEBPACK_IMPORTED_MODULE_0__.createFooter)();
+    
+    advanceSlider();
 }
 
+
+function carouselBtnEvent(button) {
+    button.addEventListener('click', () => {
+        const offset = button.classList.contains('next') ? 1 : -1
+        advanceSlider(offset);
+    })
+}
+
+let timeoutId
+
+function advanceSlider(offset = 1) {
+    const slides = document.querySelector('.slides')
+    const activeSlide = slides.querySelector('.active')
+    const navButtonDiv = document.querySelector('.nav-div')
+    const activeNavBtn = navButtonDiv.querySelector('.active')
+    let newSlideIndex = [...slides.children].indexOf(activeSlide) + offset
+    if (newSlideIndex < 0) newSlideIndex = slides.children.length - 1
+    if (newSlideIndex >= slides.children.length) newSlideIndex = 0
+
+    slides.children[newSlideIndex].classList.add('active');
+    activeSlide.classList.remove('active')
+
+    navButtonDiv.children[newSlideIndex].classList.add('active')
+    activeNavBtn.classList.remove('active')
+
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(advanceSlider, 5000)
+}
 
 /***/ }),
 
@@ -1029,6 +1139,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "createContact": () => (/* binding */ createContact)
 /* harmony export */ });
 /* harmony import */ var _main_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main-page */ "./src/main-page.js");
+/* harmony import */ var _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @googlemaps/js-api-loader */ "./node_modules/@googlemaps/js-api-loader/dist/index.esm.js");
+
 
 
 function createContact() {
@@ -1057,6 +1169,27 @@ function createContact() {
     const contactHeaderH3Three = document.createElement('h3');
     contactHeaderH3Three.innerText = 'Open Tues. - Sun. 11am to 10pm';
     contactHeader.appendChild(contactHeaderH3Three);
+
+    const mapDiv = document.createElement('div');
+    mapDiv.setAttribute('id', 'map');
+    contactHeader.appendChild(mapDiv);
+    const loader = new _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_1__.Loader({
+        apiKey: "/////",
+        version: "weekly",
+        });
+        
+        let restPos = { lat: 40.2235464, lng: -74.7702636 };
+        loader.load().then(() => {
+        let map = new google.maps.Map(document.getElementById("map"), {
+            center: restPos,
+            zoom: 18,
+        })
+        let marker = new google.maps.Marker({
+            position: restPos,
+            map: map
+        })
+    });
+
     const form = document.createElement('form');
     form.setAttribute('action', '#');
     form.setAttribute('method', 'post');
@@ -1914,6 +2047,16 @@ module.exports = __webpack_require__.p + "abdalla-m-uTaSlu2Jfsg-unsplash..jpg";
 
 /***/ }),
 
+/***/ "./src/img/chicken-2308650312.jpg":
+/*!****************************************!*\
+  !*** ./src/img/chicken-2308650312.jpg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "chicken-2308650312..jpg";
+
+/***/ }),
+
 /***/ "./src/img/dining-area.jpg":
 /*!*********************************!*\
   !*** ./src/img/dining-area.jpg ***!
@@ -1924,6 +2067,16 @@ module.exports = __webpack_require__.p + "dining-area..jpg";
 
 /***/ }),
 
+/***/ "./src/img/dushanbe-serena-hotel.jpg":
+/*!*******************************************!*\
+  !*** ./src/img/dushanbe-serena-hotel.jpg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "dushanbe-serena-hotel..jpg";
+
+/***/ }),
+
 /***/ "./src/img/gabriella-clare-marino-F6AkaAzN4lk-unsplash.jpg":
 /*!*****************************************************************!*\
   !*** ./src/img/gabriella-clare-marino-F6AkaAzN4lk-unsplash.jpg ***!
@@ -1931,6 +2084,36 @@ module.exports = __webpack_require__.p + "dining-area..jpg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "gabriella-clare-marino-F6AkaAzN4lk-unsplash..jpg";
+
+/***/ }),
+
+/***/ "./src/img/main-qimg-ad38fef62b1b7156b19aeee7e96571d7-lq.jpeg":
+/*!********************************************************************!*\
+  !*** ./src/img/main-qimg-ad38fef62b1b7156b19aeee7e96571d7-lq.jpeg ***!
+  \********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "main-qimg-ad38fef62b1b7156b19aeee7e96571d7-lq..jpeg";
+
+/***/ }),
+
+/***/ "./src/img/same-bad-sauce-smothered.jpg":
+/*!**********************************************!*\
+  !*** ./src/img/same-bad-sauce-smothered.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "same-bad-sauce-smothered..jpg";
+
+/***/ }),
+
+/***/ "./src/img/worst-pasta-ive-ever.jpg":
+/*!******************************************!*\
+  !*** ./src/img/worst-pasta-ive-ever.jpg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "worst-pasta-ive-ever..jpg";
 
 /***/ })
 
@@ -2095,4 +2278,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.7f863e28e1df0357eff4.js.map
+//# sourceMappingURL=main.ed04e78cf770fa109a24.js.map
